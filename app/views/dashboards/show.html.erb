@@ -1,0 +1,8 @@
+<% heading = Current.user.agent? ? "All tickets" : "My tickets" %>
+<% content_for :title, "#{heading} · Incident Desk" %>
+
+<main class="page">
+  <div class="page-head">
+    <h1><%= heading %></h1>
+  </div>
+</main>
