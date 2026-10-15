@@ -40,4 +40,13 @@ class UserTest < ActiveSupport::TestCase
 
     assert_equal [ "agent" ], user.reload.roles.pluck(:name)
   end
+
+  test "agent? is true only for agents" do
+    assert users(:agent).agent?
+    assert_not users(:customer).agent?
+  end
+
+  test "the database rejects a role name other than customer or agent" do
+    assert_raises(ActiveRecord::StatementInvalid) { Role.insert!({ name: "admin" }) }
+  end
 end

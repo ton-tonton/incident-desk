@@ -1,4 +1,4 @@
-<% heading = Current.user.has_role?(:agent) ? "All tickets" : "My tickets" %>
+<% heading = Current.user.agent? ? "All tickets" : "My tickets" %>
 <% content_for :title, "#{heading} · Incident Desk" %>
 
 <div class="page-head">

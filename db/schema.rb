@@ -19,6 +19,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_10_15_081919) do
     t.datetime "updated_at", null: false
     t.index ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id", unique: true
     t.index ["resource_type", "resource_id"], name: "index_roles_on_resource"
+    t.check_constraint "name IN ('customer', 'agent')", name: "roles_name_allowed"
   end
 
   create_table "sessions", force: :cascade do |t|

@@ -5,6 +5,7 @@ class RolifyCreateRoles < ActiveRecord::Migration[8.1]
       t.references :resource, polymorphic: true
 
       t.timestamps
+      t.check_constraint "name IN ('customer', 'agent')", name: "roles_name_allowed"
     end
     add_index :roles, [ :name, :resource_type, :resource_id ], unique: true
 

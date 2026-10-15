@@ -20,6 +20,10 @@ class User < ApplicationRecord
     @pending_role = name
   end
 
+  def agent?
+    role == "agent"
+  end
+
   private
     def save_role
       if @pending_role
