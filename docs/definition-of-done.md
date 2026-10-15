@@ -2,7 +2,7 @@
 
 A ticket is done when every required item below is checked.
 
-- Items with no tag come from `docs/requirements.md`, `docs/user-stories.md`, or `config/ci.rb`.
+- Items with no tag come from `docs/requirements.md`, `docs/user-stories.md`, `config/ci.rb`, or `docs/pull-requests.md`.
 - Items tagged _(optional)_ are guesses. The team can make them required or delete them.
 - Skip an item if it does not apply to the change (for example, a docs-only change skips Functionality).
 - There is no GitHub Actions workflow yet. CI runs locally with `bin/ci`.
@@ -87,4 +87,5 @@ A ticket is done when every required item below is checked.
 - [ ] The PR description has `Closes #<issue number>`. _(optional)_
 - [ ] Commit messages follow Conventional Commits (`feat:`, `fix:`, `docs:`, `chore:`). _(optional)_
 - [ ] The `code-review` skill was run on the branch, and its findings are fixed or answered. _(optional)_
+- [ ] The PR is opened last, after every other item above. Its description uses every section of `.github/pull_request_template.md` and follows `docs/pull-requests.md`. Risks / Notes is never empty: it says "None." if nothing applies.
 - [ ] The PR is merged into `main`. _(optional)_

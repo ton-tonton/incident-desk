@@ -15,7 +15,7 @@ Before any code change, read [Rules](#rules) (how to read `.claude/skills/rules/
 | Build or change a UI screen | the matching mockup in [docs/design/](design/), [docs/design/styles.css](design/styles.css), [.claude/skills/rules/style.md](../.claude/skills/rules/style.md) |
 | Work from a GitHub issue | [docs/agents/issue-tracker.md](agents/issue-tracker.md), [implement skill](../.agents/skills/implement/SKILL.md) |
 | Split a plan into tickets | [docs/agents/issue-tracker.md](agents/issue-tracker.md), [to-tickets skill](../.agents/skills/to-tickets/SKILL.md) |
-| Check if work is done / open a PR | [docs/definition-of-done.md](definition-of-done.md) (see [Definition of Done](#definition-of-done)) |
+| Check if work is done / open a PR | [docs/definition-of-done.md](definition-of-done.md) (see [Definition of Done](#definition-of-done)), [docs/pull-requests.md](pull-requests.md), [.github/pull_request_template.md](../.github/pull_request_template.md) |
 | Review code | [code-review skill](../.agents/skills/code-review/SKILL.md), [.claude/skills/rules/](../.claude/skills/rules/) (the coding standards), [docs/requirements.md](requirements.md) |
 | Name domain terms or record a decision | [docs/agents/domain.md](agents/domain.md), [domain-modeling skill](../.agents/skills/domain-modeling/SKILL.md), `GLOSSARY.md` (created later), `docs/adr/` (created later) |
 | Design or refactor a module | [codebase-design skill](../.agents/skills/codebase-design/SKILL.md) |
@@ -58,6 +58,8 @@ How to use it:
 | [docs/requirements.md](requirements.md) | Roles, functional requirements, out-of-scope list |
 | [docs/user-stories.md](user-stories.md) | User stories 1–6 with acceptance criteria |
 | [docs/definition-of-done.md](definition-of-done.md) | Checklist a change must pass before it is done |
+| [docs/pull-requests.md](pull-requests.md) | How to write a PR title and description |
+| [.github/pull_request_template.md](../.github/pull_request_template.md) | PR description template (GitHub fills it in) |
 | [.claude/skills/rules/](../.claude/skills/rules/) | Coding rules (security, Rails, style) |
 | [docs/agents/issue-tracker.md](agents/issue-tracker.md) | How to read, create, and link GitHub issues with `gh` |
 | [docs/agents/domain.md](agents/domain.md) | How to use the glossary and ADRs |
