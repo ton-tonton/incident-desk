@@ -1,3 +1,7 @@
+## Docs index
+
+Start with `docs/README.md`: it maps each task to the files to read.
+
 ## Agent skills
 
 ### Issue tracker
